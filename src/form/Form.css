@@ -1,0 +1,87 @@
+/* Variables */
+
+:root {
+   --color-1: rgb(255, 255, 255);
+   --color-2: rgb(230, 230, 230);
+   --color-3: rgb(79, 150, 255);
+   --color-4: rgb(32, 62, 106);
+   --color-5: rgb(115, 115, 115);
+}
+
+/* Common styles */
+.input {
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+
+   background-color: var(--color-2);
+}
+
+/* Form styles */
+
+.form-wrapper {
+   margin-top: 100px;
+   display: flex;
+   justify-content: center;
+}
+
+.form {
+   padding: 30px;
+   min-width: 520px;
+   /* border: 1px solid black; */
+   box-shadow: 0px 1px 5px 0px var(--color-5);
+   border-radius: 10px;
+}
+
+.form__header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+/* Стили для card number */
+.form__header > .form-label:first-child {
+   flex-basis: 80%;
+}
+
+.form-img {
+   margin: 0 auto;
+   max-width: 48px;
+   flex-basis: fill;
+}
+
+
+
+.form__body {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+/* Стили для expiration date */
+.form__body > .form-label:nth-child(1) {
+   max-width: 120px;
+   margin-right: 20px;
+}
+/* Стили для cvv */
+.form__body > .form-label:nth-child(2) {
+   max-width: 50px;
+}
+
+.form__bank-text {
+   margin: 0 auto;
+   font-size: 18px;
+   font-weight: bold;
+   align-self: center;
+}
+
+.form__footer {
+   display: flex;
+   justify-content: flex-end;
+}
+
+/* Убираем стрелочки от input с типом number */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

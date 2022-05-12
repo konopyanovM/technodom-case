@@ -1,0 +1,15 @@
+.form-label {
+   margin-bottom: 10px;
+   display: flex;
+   flex-direction: column;
+}
+
+.form-label > input {
+   margin-top: 5px;
+   font-size: 16px;
+}
+
+.form-label--wrap {
+   /* Для того чтобы елемент перешел на следующую строку */
+   flex-basis: 100%;
+}
